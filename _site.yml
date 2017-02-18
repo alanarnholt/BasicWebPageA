@@ -1,9 +1,9 @@
-name: "my-website"
+name: "Basic Web Page"
 output_dir: "docs"
 navbar:
-  title: "My Website"
+  title: "Your Name"
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "bookdown"
+      href: misc.html

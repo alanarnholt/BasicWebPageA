@@ -1,5 +1,34 @@
 ---
-title: "About This Website"
+title: "MISC"
+output: bookdown::html_document2
 ---
 
-More about this website.
+# Examples
+## Text
+
+* A bullet
+
+> Some famous quote
+
+My favorite web [page](http://www.usms.org/).  
+
+Figure \@ref(fig:junk) is an example.
+
+```{r, label = "junk", fig.align='center',fig.cap="Your caption goes here", echo = FALSE}
+set.seed(123)
+hist(rnorm(1000), main = "", breaks = "Scott", col = "pink")
+```
+
+# `bookdown`
+
+Using `bookdown` allows us to label and refer to Equations, Tables, and Figures.  See [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) for more details. 
+
+\begin{equation}
+\bar{x} = \sum_{i=1}^{n}\frac{x_i}{n}
+(\#eq:ONE)
+\end{equation}
+
+\begin{equation}
+X \overset{\bullet}{\sim}\mathcal{N}(\mu, \sigma)
+(\#eq:TWO)
+\end{equation}
