@@ -14,7 +14,7 @@ My favorite web [page](http://www.usms.org/).
 
 Figure \@ref(fig:junk) is an example.
 
-```{r, label = "junk", fig.align='center',fig.cap="Your caption goes here", echo = FALSE}
+```{r, label = "junk", fig.align='center',fig.cap="Your caption goes here", echo = TRUE}
 set.seed(123)
 hist(rnorm(1000), main = "", breaks = "Scott", col = "pink")
 ```

@@ -11,16 +11,16 @@
 
 
 
-<title>MISC</title>
+<title>Yeti Theme Highlight Textmate - ASU css</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -66,6 +66,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="alans.css" type="text/css" />
 
 </head>
 
@@ -97,34 +98,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 45px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 </style>
 
@@ -205,7 +206,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">MISC</h1>
+<h1 class="title toc-ignore">Yeti Theme Highlight Textmate - ASU css</h1>
 
 </div>
 
@@ -220,21 +221,29 @@ $(document).ready(function () {
 <blockquote>
 <p>Some famous quote</p>
 </blockquote>
-<p>My favorite web <a href="http://www.usms.org/">page</a>.</p>
-<p>Figure <a href="#fig:junk">1.1</a> is an example.</p>
-<pre class="r"><code>set.seed(123)
-hist(rnorm(1000), main = &quot;&quot;, breaks = &quot;Scott&quot;, col = &quot;pink&quot;)</code></pre>
-<div class="figure" style="text-align: center"><span id="fig:junk"></span>
-<img src="about_files/figure-html/junk-1.png" alt="Your caption goes here" width="672" />
-<p class="caption">
-Figure 1.1: Your caption goes here
-</p>
 </div>
+<div id="url" class="section level2">
+<h2><span class="header-section-number">1.2</span> URL</h2>
+<p>My favorite web <a href="http://www.usms.org/">page</a>.</p>
 </div>
 </div>
 <div id="bookdown" class="section level1">
 <h1><span class="header-section-number">2</span> <code>bookdown</code></h1>
 <p>Using <code>bookdown</code> allows us to label and refer to Equations, Tables, and Figures. See <a href="https://bookdown.org/yihui/bookdown/">bookdown: Authoring Books and Technical Documents with R Markdown</a> for more details.</p>
+<div id="figures" class="section level2">
+<h2><span class="header-section-number">2.1</span> Figures</h2>
+<pre class="r"><code>set.seed(123)
+hist(rnorm(1000), main = &quot;&quot;, breaks = &quot;Scott&quot;, col = &quot;pink&quot;)</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:junk"></span>
+<img src="ASU_files/figure-html/junk-1.png" alt="Your caption goes here" width="672" />
+<p class="caption">
+Figure 2.1: Your caption goes here
+</p>
+</div>
+<p>Figure <a href="#fig:junk">2.1</a> is unimodal. Equation <a href="#eq:ONE">(2.1)</a> computes the mean.</p>
+</div>
+<div id="equations" class="section level2">
+<h2><span class="header-section-number">2.2</span> Equations</h2>
 <span class="math display" id="eq:ONE">\[\begin{equation}
 \bar{x} = \sum_{i=1}^{n}\frac{x_i}{n}
 \tag{2.1}
@@ -243,6 +252,138 @@ Figure 1.1: Your caption goes here
 X \overset{\bullet}{\sim}\mathcal{N}(\mu, \sigma)
 \tag{2.2}
 \end{equation}\]</span>
+</div>
+<div id="tables" class="section level2">
+<h2><span class="header-section-number">2.3</span> Tables</h2>
+<table>
+<caption><span id="tab:unnamed-chunk-1">Table 2.1: </span>A table of the first 10 rows of the mtcars data.</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.620</td>
+<td align="right">16.46</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td>Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.875</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td>Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108.0</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+<td align="right">2.320</td>
+<td align="right">18.61</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td>Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258.0</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td>Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td>Valiant</td>
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225.0</td>
+<td align="right">105</td>
+<td align="right">2.76</td>
+<td align="right">3.460</td>
+<td align="right">20.22</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td>Duster 360</td>
+<td align="right">14.3</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">245</td>
+<td align="right">3.21</td>
+<td align="right">3.570</td>
+<td align="right">15.84</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td>Merc 240D</td>
+<td align="right">24.4</td>
+<td align="right">4</td>
+<td align="right">146.7</td>
+<td align="right">62</td>
+<td align="right">3.69</td>
+<td align="right">3.190</td>
+<td align="right">20.00</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td>Merc 230</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">140.8</td>
+<td align="right">95</td>
+<td align="right">3.92</td>
+<td align="right">3.150</td>
+<td align="right">22.90</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td>Merc 280</td>
+<td align="right">19.2</td>
+<td align="right">6</td>
+<td align="right">167.6</td>
+<td align="right">123</td>
+<td align="right">3.92</td>
+<td align="right">3.440</td>
+<td align="right">18.30</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 

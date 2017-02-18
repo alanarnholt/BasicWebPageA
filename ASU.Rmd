@@ -1,6 +1,10 @@
 ---
-title: "Odds and Ends"
-output: bookdown::html_document2
+title: "Yeti Theme Highlight Textmate - ASU css"
+output:
+  bookdown::html_document2:
+    theme: yeti
+    highlight: textmate
+    css: alans.css  
 ---
 
 # Examples
@@ -19,7 +23,7 @@ Using `bookdown` allows us to label and refer to Equations, Tables, and Figures.
 
 ## Figures
 
-```{r, label = "junk", fig.align='center',fig.cap="Your caption goes here", echo = FALSE}
+```{r, label = "junk", fig.align='center',fig.cap="Your caption goes here", echo = TRUE}
 set.seed(123)
 hist(rnorm(1000), main = "", breaks = "Scott", col = "pink")
 ```

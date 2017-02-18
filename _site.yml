@@ -6,4 +6,16 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "bookdown"
-      href: misc.html
+      href: bookdown.html
+    - text: "Theme Readable"
+      href: RTM.html
+    - text: "Theme Cerulean"
+      href: CTM.html
+    - text: "Simplex Theme"
+      href: STM.html
+    - text: "ASU Colors"
+      href: ASU.html
+output: 
+  bookdown::html_document2:
+    theme: united
+    highlight: default
